@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <!-- Meta-informazioni della pagina con nome dell'autore, descrizione della pagina, inserimento
+    di parole chiave per i motori di ricerca, e inizializazione della directory in cui è presente
+    questa pagina, utile per i collegamenti ai link del sito -->
     <head>
         <title>Mobile Store</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Davide Senis">
+        <meta name="description" content="Vendere e acquistare smartphone o tablet">
+        <meta name="keywords" content="vendere, acquistare, smartphone, tablet, bitcoin, usato">
         <base href='http://localhost:8080/Milestone/M1/'>
     </head>
     <body>
+        <!-- Sommario ai vari paragrafi presenti nella pagina attraverso una lista concatenata che 
+        segue la gerarchia dei titoli -->
         <h1>Mobile Store</h1>
         <ul>
             <li>
@@ -33,6 +40,16 @@
                 </ul>
             </li>    
         </ul>
+        <!-- Lista che rimanda alla pagina login.html -->
+        <h2>Navigazione</h2>
+        <ul>
+            <li>
+                <a href='login.html'>Accedi</a>
+            </li>
+        </ul>
+        <!-- Descrizione del sito e delle sue finalità con titoli di diversa gerarchia e paragrafi 
+        associati. Per ogni titolo è stato associato un id che viene usato per spostarsi più velocemente
+        nella pagina attraverso il sommario -->
         <a id='sommario1'>
             <h2>Chi siamo?</h2>
         </a>
@@ -49,7 +66,8 @@
             <h3>Come posso vendere/acquistare?</h3>
         </a>
             <p>
-                Per poter cominciare a comprare o vendere i modelli è necessario *registrarsi* al sito.
+                Per poter cominciare a comprare o vendere i modelli è necessario <a href='login.html'>iscriversi</a> 
+                al sito.
             </p>
         <a id='sommario2_2'>
             <h3>In che modo posso acquistare il mio modello</h3>
@@ -63,10 +81,10 @@
             <h3>In che modo posso vendere il mio modello</h3>
         </a>
             <p>
-                Per vendere il suo modello deve andare nella sezione *Vendi* e compilare il relativo form con
-                i dati dell'oggetto, la foto e una breve descrizione, indicando anche se vuole vendere il 
-                prodotto un prezzo fisso o mettendolo all'asta. Il relativo importo le sarà accreditato nella
-                carta di credito indicata in fase di registrazione.
+                Per vendere il suo modello deve andare nella sezione <a href='venditore.html'>Vendi</a> 
+                e compilare il relativo form con i dati dell'oggetto, la foto e una breve descrizione, 
+                indicando anche se vuole vendere il prodotto un prezzo fisso o mettendolo all'asta. Il relativo 
+                importo le sarà accreditato nella carta di credito indicata in fase di registrazione.
             </p>
         <a id='sommario2_4'>
             <h3>Ci possono essere costi aggiuntivi sul prodotto?</h3>
@@ -83,7 +101,5 @@
                 Qualora il venditore lo specifica selezionando la relativa spunta in fase di acquisto si può
                 vendere e comprare il prodotto attraverso la valuta virtuale Bitcoin(BTC).
             </p>
-        <h2>Navigazione</h2>
-        <a href='login.html'>Accedi</a>
     </body>
 </html>
