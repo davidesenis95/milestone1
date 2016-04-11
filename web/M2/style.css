@@ -1,0 +1,212 @@
+/* Colore di sfondo del sito */
+body {   
+     background-color: azure; 
+ }
+
+/* Font del testo */ 
+ p {      
+     font-family: "Arial", Arial, serif ;
+     font-style: italic;
+ }
+ 
+/* Font dei titoli e proprietà */ 
+ h1 {      
+     font-family: "Comic Sans MS", Comic Sans MS, serif ;
+     color: green;
+     text-align:center;
+ }
+ 
+ h2 {      
+     font-family: "Comic Sans MS", Comic Sans MS, serif ;
+ }
+ 
+ h3 {      
+     font-family: "Comic Sans MS", Comic Sans MS, serif ;
+ }
+ 
+/* Proprietà di visualizzazione dei link */
+ a:link{
+     color: blue;
+ }
+ 
+ a:visited{
+     color: blueviolet;
+ }
+ 
+ a:active{
+     color: greenyellow;
+ }
+
+/* Font, colore, bordo, larghezza delle celle d'intestazione della tabella */
+ th{
+    font-family: "Comic Sans MS", Comic Sans MS, serif ;
+    background-color: green;
+    border: 2px solid black;
+    max-width: 150px;
+    width: 19%;
+ }
+ 
+/* Font, bordo, altezza delle celle della tabella */
+ td{
+    font-family: "Arial", Arial, serif ;
+    border: 2px solid black;
+    height: auto;
+ }
+
+/* Diversi colori per le celle d'intestazione, pari, dispari '*/ 
+ .c1{
+     background-color: limegreen;
+     text-align: center;
+ }
+ 
+ .c2{
+     background-color:greenyellow;
+     text-align: center;
+ }
+ .c3{
+     background-color: black;
+ }
+
+/* Proprietà di visualizzazione della tabella */
+ table{
+     border-collapse: collapse;
+     margin-left:auto;
+     margin-right:auto;
+     word-wrap:break-word;
+     table-layout:fixed;
+     width:100%;
+ }
+ 
+/* Proprietà di visualizzazione dei form */ 
+ form{
+     text-align:center;    
+     width: 80%;
+     margin:auto;
+     overflow:auto;
+     font-size:30px;
+ }
+
+/* Allineo le label e i campi di imput */ 
+label:after, label:before{
+    content: '\A'; 
+    white-space: pre;
+}
+
+/* Proprietà di visualizzazione dei pulsanti */
+.b1{
+    display: block;
+    height: 40px;
+    width: 20%;
+    min-width: 100px;
+    font-size: 25px;
+    margin: 0 auto;
+    border: 2px solid black;
+    /* Curvatura degli angoli del pulsante */
+    -webkit-border-radius: 10px;
+}
+
+.b2{
+    display:block;
+    height: 40px;
+    width: 40%;
+    min-width: 200px;
+    font-size:25px;
+    margin: 0 auto;
+    border:2px solid black;
+    /* Curvatura degli angoli del pulsante */
+    -webkit-border-radius: 10px;
+}
+
+/* Proprietà dei campi di input */
+input{ 
+    border: 2px solid grey; 
+    width: 80%; 
+    max-width:300px;
+    font-size:100%;
+}
+
+/* Proprietà della textarea */
+textarea{
+    border: 2px solid grey; 
+    height: 300px; 
+    max-width: 300px; 
+    width:80%; 
+    font-size:25px;
+}
+
+/* Proprietà dei campi di input e textarea quando sono selezionati */
+input:focus {
+  border: 2px solid buttonface;
+  color: black;
+}
+
+textarea:focus {
+  border: 2px solid buttonface;
+  color: black;
+}
+
+/* Larghezza e altezza delle immagini */
+.imm{
+    width:100%;
+    height:auto;
+}
+
+/* Racchiude tutti gli id del body */
+#tutto{
+    width: 100%;
+}
+
+/* Proprietà dell'header di default */
+#header{
+    text-align:center;
+    background-color:aqua;
+    width:100%;
+    float:left;
+}
+
+/* Proprietà del contenuto di default */
+#contenuto{
+    background-color:deepskyblue;
+    width:65%;
+    float:right;
+}
+
+/* Proprietà dela navigazione di default */
+#navigazione{
+    background-color: pink;
+    width:33%;
+    float:left;
+}
+
+/* Proprietà del footer di default */
+#footer{
+    background-color: yellowgreen;
+    width:100%;
+    height:40px;
+    float:left;
+}
+
+/* Proprietà dell'header, del contenuto, della navigazione, del footer quando la dimensione del
+dispostivo o della finestra del browser sono pari o superiori a 650 pixel */
+@media (min-width: 650px){
+    #tutto{width:100%;}
+    #header{width:100%; float:left;}
+    #contenuto{width:65%; float:right;}
+    #navigazione{width:33%; float:left;}
+    #footer{width:100%; float:left;}
+}
+
+/* Proprietà dell'header, del contenuto, della navigazione, del footer quando la dimensione del
+dispostivo o della finestra del browser sono pari o inferiori a 649 pixel */
+@media (max-width: 649px){
+    #tutto{width:100%;}
+    #header{width:100%; float:left;}
+    #contenuto{width:100%; float:right;}
+    #navigazione{width:100%; float:left;}
+    #footer{width:100%; float:left;}
+}
+
+
+
+
+

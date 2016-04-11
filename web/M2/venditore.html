@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <!-- Meta-informazioni della pagina con nome dell'autore, descrizione della pagina, inserimento
+    di parole chiave per i motori di ricerca, inserimento della possibilità di cambio di visualizzazione
+    in base alle dimensioni del dispositivo o della finestra browser, collegamento al file style.css -->
+    <head>
+        <title>Vendi - Mobile Store</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Davide Senis">
+        <meta name="description" content="Vendere smartphone o tablet">
+        <meta name="keywords" content="vendere, acquistare, smartphone, tablet, bitcoin, usato">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <div id="tutto">
+        <!-- header della pagina -->
+        <div id="header">    
+        <h1>Mobile Store</h1>
+        </div>
+        <!-- Lista che rimanda alle pagine descrizione.html e login.html -->
+        <div id="navigazione">
+        <h2>Navigazione</h2>
+        <ul>
+            <li>
+                <a href='descrizione.html'>Pagina Principale</a>
+            </li>
+            <li>
+                <a href='login.html'>Accedi</a>
+            </li>
+        </ul>
+        </div>
+        <!-- Form per vendere il proprio prodotto. Al venditore viene richiesto il nome del modello,
+        un URL per caricare la foto del modello, la descrizione del modello, il prezzo e la quantita
+        degli stessi modelli messi in vendita -->
+        <div id="contenuto">
+        <h1>Vendi</h1>
+        <form>
+            <label for="modello">Nome modello:</label>
+            <input type="text" name="modello" id="modello">
+            <label for="url">URL foto:</label>
+            <input type="text" name="url" id="url">
+            <label for="descrizione">Descrizine dell'oggetto:</label>
+            <textarea rows="8" cols="40" name='descrizione' id='descrizione'>
+            </textarea>            
+            <label for="prezzo">Prezzo:</label>
+            <input type="number" name="prezzo" id="prezzo">
+            <label for="quantità">Quantità</label>
+            <input type="number" name="quantità" id="quantità">
+            <button class="b2" type="submit">Metti in vendita</button>
+         </form>
+        </div>
+        <!-- footer della pagina -->
+        <div id="footer"></div>
+        </div>
+    </body>
+</html>

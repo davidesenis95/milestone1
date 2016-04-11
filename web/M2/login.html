@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <!-- Meta-informazioni della pagina con nome dell'autore, descrizione della pagina, inserimento
+    di parole chiave per i motori di ricerca, inserimento della possibilità di cambio di visualizzazione
+    in base alle dimensioni del dispositivo o della finestra browser, collegamento al file style.css -->
+    <head>
+        <title>Login - Mobile Store</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Davide Senis">
+        <meta name="description" content="Sito di login">
+        <meta name="keywords" content="vendere, acquistare, smartphone, tablet, bitcoin, usato">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <div id="tutto">
+        <!-- header della pagina -->
+        <div id="header">    
+        <h1>Mobile Store</h1>
+        </div>
+        <!-- Lista che rimanda alle pagine descrizione.html, cliente.html e venditore.html -->
+        <div id="navigazione">
+        <h2>Navigazione</h2>
+        <ul>
+            <li>
+                <a href='descrizione.html'>Pagina Principale</a>
+            </li>
+            <li>
+                <a href='cliente.html'>Acquista</a>
+            </li>
+            <li>
+                <a href='venditore.html'>Vendi</a>
+            </li>
+        </ul>
+        </div>
+        <!-- Richiedo all'utente si inserire la username e la password per accedere alle piene funzionalita
+        del sito -->
+        <div id="contenuto">
+        <h1>Accedi</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <label for="psw">Password:</label>
+            <input type="password" name="psw" id="psw">
+            <button class="b1" type="submit">Invia</button>
+        </form>
+        </div>
+        <!-- footer della pagina -->
+        <div id="footer"></div>
+        </div>
+    </body>
+</html>
